@@ -1,6 +1,10 @@
 # python-contact-manager
 An contact manager written in python with the help of Google Gemini AI. 
 
+### Dependencies 
+ - The only library that you need to install is Pillow.
+ - Run `pip install pillow` or use your IDE's package manager. 
+
 # Here's a summary of the process and prompts used during this chat to create the contact manager app:
 
 Initial Goal: Create a basic contact management application using Tkinter (for the GUI) and SQLite (for data storage).
