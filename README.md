@@ -1,10 +1,10 @@
 # python-contact-manager
 An contact manager written in python with the help of Google Gemini AI. 
 
-# A summary of the process and prompts used to create this code. 
+# Here's a summary of the process and prompts used during this chat to create the contact manager app:
 
-Here's a summary of the process and prompts used during this chat to create the contact manager app:
 Initial Goal: Create a basic contact management application using Tkinter (for the GUI) and SQLite (for data storage).
+
 # Phase 1: Basic Structure and Database
  - Prompt 1: Initial request to create a contact management application.
  - Process: Created the basic Tkinter window structure, defined functions for database operations (create table, add contact), and set up basic input fields.
