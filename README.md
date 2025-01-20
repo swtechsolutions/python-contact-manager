@@ -1,9 +1,9 @@
 # python-contact-manager
 An contact manager written in python with the help of Google Gemini AI. 
 
-!(img/python-contact-manager-main-window.png) 
-!(img/python-contact-manager-file-menu.png) 
-!(img/python-contact-manager-about-window.png)
+![text](img/python-contact-manager-main-window.png) 
+![text](img/python-contact-manager-file-menu.png) 
+![text](img/python-contact-manager-about-window.png)
 
 ### Dependencies 
  - The only library that you need to install is Pillow.
