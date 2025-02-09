@@ -7,7 +7,9 @@ An contact manager written in python with the help of Google Gemini AI.
 
 ### Dependencies 
  - The only library that you need to install is Pillow.
- - Run `pip install pillow` or use your IDE's package manager. 
+   - If you wish to package for Windows install pyinstaller with `pip install pyinstaller`
+   - Then in the root from a terminal run `pyinstaller --onefile --noconsole --add-data "sw_tech_logo.png;." contact_manager.py` to package into a self-contained .exe file.
+ - Run `pip install pillow` or use your IDE's package manager.
 
 # Here's a summary of the process and prompts used during this chat to create the contact manager app:
 

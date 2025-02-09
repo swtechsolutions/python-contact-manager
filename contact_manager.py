@@ -1,4 +1,6 @@
-# This app was created by using Google Gemini.
+# This app was created with the help of Google Gemini.
+# It is packaged used pyinstaller (pip install pyinstaller)
+# pyinstaller --onefile --noconsole --add-data "sw_tech_logo.png;." contact_manager.py
 
 import tkinter as tk
 from tkinter import ttk, messagebox, Listbox, Scrollbar, filedialog
@@ -7,6 +9,7 @@ import webbrowser
 from PIL import Image, ImageTk
 import json
 import os
+import sys
 import platform
 
 
@@ -232,8 +235,17 @@ def show_about():
     about_window.title("About")
 
     try:
+
+        if getattr(sys, 'frozen', False):
+            # we are running in a |PyInstaller| bundle
+            basedir = sys._MEIPASS
+        else:
+            # we are running in a normal Python environment
+            basedir = os.path.dirname(os.path.abspath(__file__))
+
         # Load the image
-        about_image = Image.open("swtech_logo.png")  # Replace with your image file
+        image_path = os.path.join(basedir, "sw_tech_logo.png")
+        about_image = Image.open(image_path)  # Replace with your image file
         about_photo = ImageTk.PhotoImage(about_image)
 
         image_label = ttk.Label(about_window, image=about_photo)

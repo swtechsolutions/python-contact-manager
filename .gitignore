@@ -1,4 +1,7 @@
 
-contacts.db
 /.venv/
 /.idea
+/dist/
+/build/
+contacts.db
+contact_manager.spec
